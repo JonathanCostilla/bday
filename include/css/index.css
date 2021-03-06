@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(255, 202, 228);
+}
+
+
+.menu_img{
+    text-align:center;
+	display:block;
+    position:fixed;
+	left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    
+}
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+    to{
+        opacity: 1;
+        display: block;
+        width: 90%;
+        height: 50%;
+    }
+}
+
+@keyframes FadeIn2{
+    from{
+        opacity: 0;
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+    to{
+        opacity: 1;
+        display: block;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.imgbday{
+    animation: FadeIn 5s;
+    display: block;
+    width: 90%;
+    height: 50%;
+    z-index: 1111;
+}
+
+.imgbday2{
+    animation: FadeIn2 5s;
+    display: block;
+    width: 50%;
+    height: 50%;
+    z-index: 1111;
+}
+
+.imgbday3{
+    display: flexbox;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
